@@ -8,6 +8,8 @@ Late January early febuary big tech disclosed their 2026 capital expenditure. Wa
 
 ## 2026 CapEx :
 
+<canvas id="capex-chart" style="max-height: 400px;"></canvas>
+
 - Oracle ~50B
 - Meta ~125B
 - Microsoft ~130B
@@ -16,6 +18,8 @@ Late January early febuary big tech disclosed their 2026 capital expenditure. Wa
 - Total ~685B
 
 ok cool big number, but what does this mean in a historical context :
+
+<canvas id="historical-chart" style="max-height: 400px;"></canvas>
 
 | Project / Entity | Total Cost (Adjusted) | Duration | Avg. Spend Per Year |
 |------------------|----------------------|----------|---------------------|
@@ -28,3 +32,85 @@ that puts it into perspective doesnt it? the even wilder thing is these historic
 
 even more, Once you Build a Higway or Railroad you get to keep the infrastructure and just maintain it. in this AI arms race approximately 60% is going into depreciating GPUs.
 
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+var fontFamily = "'Inter Tight', system-ui, sans-serif";
+
+new Chart(document.getElementById('capex-chart'), {
+  type: 'bar',
+  data: {
+    labels: ['Oracle', 'Meta', 'Microsoft', 'Alphabet', 'Amazon'],
+    datasets: [{
+      label: '2026 CapEx ($B)',
+      data: [50, 125, 130, 180, 200],
+      backgroundColor: ['#EC8F8D', '#537D96', '#44A194', '#537D96', '#EC8F8D'],
+      borderRadius: 4
+    }]
+  },
+  options: {
+    responsive: true,
+    plugins: {
+      legend: { display: false },
+      title: {
+        display: true,
+        text: '2026 Capital Expenditure ($B)',
+        font: { family: fontFamily, size: 16 }
+      }
+    },
+    scales: {
+      y: {
+        beginAtZero: true,
+        grid: { color: 'rgba(0,0,0,0.08)' },
+        title: { display: true, text: 'Billions ($)', font: { family: fontFamily } },
+        ticks: { font: { family: fontFamily } }
+      },
+      x: {
+        grid: { display: false },
+        ticks: { font: { family: fontFamily } }
+      }
+    }
+  }
+});
+
+new Chart(document.getElementById('historical-chart'), {
+  type: 'bar',
+  data: {
+    labels: [
+      ['Big Tech AI', '(2026, 1 yr)'],
+      ['Interstate Highway', '(50 yrs)'],
+      ['Apollo Moon', '(13 yrs)'],
+      ['Manhattan Project', '(4 yrs)'],
+      ['Transcon. Railroad', '(6 yrs)']
+    ],
+    datasets: [{
+      label: 'Total Cost ($B, adjusted)',
+      data: [685, 550, 320, 35, 30],
+      backgroundColor: ['#EC8F8D', '#537D96', '#537D96', '#537D96', '#537D96'],
+      borderRadius: 4
+    }]
+  },
+  options: {
+    responsive: true,
+    plugins: {
+      legend: { display: false },
+      title: {
+        display: true,
+        text: 'Historical Comparison - Total Cost (Inflation Adjusted $B)',
+        font: { family: fontFamily, size: 16 }
+      }
+    },
+    scales: {
+      y: {
+        beginAtZero: true,
+        grid: { color: 'rgba(0,0,0,0.08)' },
+        title: { display: true, text: 'Billions ($)', font: { family: fontFamily } },
+        ticks: { font: { family: fontFamily } }
+      },
+      x: {
+        grid: { display: false },
+        ticks: { font: { family: fontFamily } }
+      }
+    }
+  }
+});
+</script>
