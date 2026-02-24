@@ -1,0 +1,13 @@
+title: Tushar Sariya
+description: Personal website and blog
+baseurl: ""
+url: ""
+
+markdown: kramdown
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - "Resume 2025 v2.docx.pdf"
+  - vendor
