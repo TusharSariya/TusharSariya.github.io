@@ -43,7 +43,7 @@ new Chart(document.getElementById('capex-chart'), {
     datasets: [{
       label: '2026 CapEx ($B)',
       data: [50, 125, 130, 180, 200],
-      backgroundColor: ['#EC8F8D', '#537D96', '#44A194', '#537D96', '#EC8F8D'],
+      backgroundColor: ['#C74634', '#0668E1', '#00A4EF', '#4285F4', '#FF9900'],
       borderRadius: 4
     }]
   },
