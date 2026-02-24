@@ -76,6 +76,7 @@ new Chart(document.getElementById('historical-chart'), {
   type: 'bar',
   data: {
     labels: [
+      ['US Defence Budget', '(2026, 1 yr)'],
       ['Big Tech AI', '(2026, 1 yr)'],
       ['Interstate Highway', '(50 yrs)'],
       ['Apollo Moon', '(13 yrs)'],
@@ -84,8 +85,8 @@ new Chart(document.getElementById('historical-chart'), {
     ],
     datasets: [{
       label: 'Total Cost ($B, adjusted)',
-      data: [685, 550, 320, 35, 30],
-      backgroundColor: ['#EC8F8D', '#537D96', '#537D96', '#537D96', '#537D96'],
+      data: [900, 685, 550, 320, 35, 30],
+      backgroundColor: ['#3C3B6E', '#EC8F8D', '#537D96', '#537D96', '#537D96', '#537D96'],
       borderRadius: 4
     }]
   },
