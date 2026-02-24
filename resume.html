@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume - Tushar Sariya</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav-bar container">
+      <a href="/" class="logo">🫘 🚧WIP🚧</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="blog.html">Bloggy McBlogface</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="container">
+    <h1>Tushar Sariya</h1>
+    <div class="main-page">
+      <section class="about">
+        <p>Backend engineer with 5 years building distributed systems and cloud infrastructure. Repeatedly reduced p99 latency and hardened services. Comfortable owning APIs end-to-end (design, IaC, deploy, observability) and mentoring teammates.</p>
+      </section>
+
+      <section class="experience">
+        <h2>Experience</h2>
+
+        <div class="job">
+          <div class="job-header">
+            <h3>Nasdaq</h3>
+            <span class="location">Canada</span>
+          </div>
+          <div class="job-role">
+            <strong>Senior Software Developer - Cloud/Analytics</strong>
+            <span class="dates">Oct 2024 - Dec 2025</span>
+          </div>
+          <ul>
+            <li>Built Check 21 Metadata APIs used by analytics consumers; partnered with architecture, security, and product to align on requirements, achieved a p50 of 100ms and p99 of 400ms, reducing analytic runtime from 10h to 2h.</li>
+            <li>Built and shipped X9 PCI redaction, CFCA results SFTP service, Check Fraud monitoring.</li>
+            <li>Mentored 5 engineers by sharing AWS best practices for compute, messaging, networking, and security across teams; authored internal guidance.</li>
+          </ul>
+
+          <div class="job-role">
+            <strong>Senior Software Developer - Cloud</strong>
+            <span class="dates">May 2021 - Oct 2024</span>
+          </div>
+          <ul>
+            <li>Led API design and deployment for a tier 1 customer for retrieving cross-region data with a 5s p99 SLA.</li>
+            <li>Cut API p99 by 50% to 1s by introducing credential-cache API, fulfilling customer SLAs.</li>
+            <li>Led cross-functional pen-testing effort of a service for a tier 1 institution, delivered ahead of schedule.</li>
+            <li>Spearheaded API load testing to meet 1s SLAs and 30 TPS using K6, AWS, Docker, Python.</li>
+            <li>Reduced postgres restore time by 50% from 24h to 12h improving developer experience.</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <div class="job-header">
+            <h3>Curtiss Wright Defence Solutions</h3>
+            <span class="location">Canada</span>
+          </div>
+          <div class="job-role">
+            <strong>Associate Software Developer</strong>
+            <span class="dates">Sep 2019 - May 2021</span>
+          </div>
+          <ul>
+            <li>Validated and released several maintenance packages for Intel, ARM and Switch products in embedded C.</li>
+            <li>Developed a build system to generate configurations of a Board Support Package to decrease testing time.</li>
+            <li>Developed Automated tests, reduced test time by 77% and saving $180k/y using TestStand and Bash.</li>
+            <li>Automated network testing using Spirent Test Centre and WireShark CLI reducing test time by 75%.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="projects2">
+        <h2>Projects</h2>
+        <ul>
+          <li><strong>Terraform Plan visualization:</strong> Used Python networkx and pydot to parse Terraform show and graph into a Graph. Created a React front end to create an "excalidraw/Draw.io" style visual of actual Terraform resource plan. Used LangGraph to create a GraphRAG to identify potential deployment, config, security and networking issues.</li>
+          <li><strong>Org-chart Website:</strong> Created this to learn about SQLAlchemy datamodels, React &amp; Flask.</li>
+          <li><strong>Flag-viewer Website:</strong> Created this to learn how to host my own website in AWS ECS, React &amp; Flask.</li>
+        </ul>
+      </section>
+
+      <section class="proficiencies">
+        <h2>Proficiencies</h2>
+        <ul>
+          <li><strong>Languages:</strong> Python - Java - Bash</li>
+          <li><strong>Cloud/Infra:</strong> AWS suite (EC2, ECS, Lambda, SQS, SNS, Kinesis, S3, IAM, API Gateway) - Terraform - Splunk - Chef - Docker</li>
+          <li><strong>Data:</strong> DynamoDB, PostgreSQL</li>
+          <li><strong>Additional:</strong> React, JavaScript, HTML, CSS, Flask, SQLAlchemy, C/C++</li>
+        </ul>
+      </section>
+
+      <section class="education">
+        <h2>Education</h2>
+        <p><strong>BEng. Electrical Engineering</strong> - May 2015 - May 2020</p>
+        <p>Memorial University of Newfoundland</p>
+      </section>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
