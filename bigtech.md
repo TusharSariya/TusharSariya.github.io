@@ -4,8 +4,6 @@ title: "AI Infra Arms Race"
 permalink: /bigtech
 ---
 
-# AI Infra Arms Race
-
 Late January early febuary big tech disclosed their 2026 capital expenditure. Wall Street predicted a CapEx increase of 19% but everyone was shocked. the numbers given are franly astronomical.
 
 ## 2026 CapEx :
