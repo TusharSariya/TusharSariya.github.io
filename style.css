@@ -90,6 +90,11 @@ body {
   padding: 1rem;
 }
 
+.blog-card img {
+  margin-inline: auto;
+  display: block;
+}
+
 .blog-card-link {
   border-radius: 8px;
   transition: box-shadow 0.25s ease, background-color 0.25s ease;
