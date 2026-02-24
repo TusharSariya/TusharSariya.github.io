@@ -15,7 +15,7 @@ body {
 }
 
 .container {
-  max-width: 800px;
+  max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
   padding: 0 1rem;
@@ -81,4 +81,18 @@ body {
   height: 300px;
   object-fit: contain;
   display: block;
+}
+
+.blog-card {
+  padding: 1rem;
+}
+
+.blog-card-link {
+  border-radius: 8px;
+  transition: box-shadow 0.25s ease, background-color 0.25s ease;
+  border-radius: 12px 8px;
+}
+.blog-card-link:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.07);
+  background-color: #f3f0e6;
 }
