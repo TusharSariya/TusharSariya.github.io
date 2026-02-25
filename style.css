@@ -48,6 +48,36 @@ body {
   font-weight: 700;
 }
 
+/* Bigtech page: section spacing and padding */
+.page-bigtech h1 {
+  margin-bottom: 1.25rem;
+}
+
+.page-bigtech h2 {
+  margin-top: 1.75rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.page-bigtech p {
+  margin: 0.75rem 0 1rem;
+  max-width: 65ch;
+}
+
+.page-bigtech .chart-border {
+  margin: 1.25rem 0;
+  padding: 0;
+}
+
+.page-bigtech table {
+  margin: 1.25rem 0 1.5rem;
+}
+
+.page-bigtech th,
+.page-bigtech td {
+  padding: 0.6rem 0.85rem;
+}
+
 .nav-bar {
   display: flex;
   justify-content: space-between;

@@ -48,3 +48,5 @@ lets compare the GDP of countries.
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script src="{{ site.baseurl }}/assets/js/bigtech-chart.js"></script>
+
+wlld isnt? to be witnessing the largest infrastructure buildout in history.

@@ -3,6 +3,7 @@
 (function () {
   var fontFamily = "'Inter Tight', system-ui, sans-serif";
   var logoSize = 32;
+  var chartPadding = 16;
   var base = typeof window !== 'undefined' && window.BASEURL ? window.BASEURL : '';
   var logoUrls = [
     base + '/assets/images/logos/oracle.svg',
@@ -62,7 +63,14 @@
       },
       options: {
         responsive: true,
-        layout: { padding: { top: logoSize + 8 } },
+        layout: {
+          padding: {
+            top: logoSize + 8,
+            right: chartPadding,
+            bottom: chartPadding,
+            left: chartPadding
+          }
+        },
         plugins: {
           legend: { display: false },
           title: {
@@ -108,6 +116,7 @@
     },
     options: {
       responsive: true,
+      layout: { padding: chartPadding },
       plugins: {
         legend: { display: false },
         title: {
@@ -144,6 +153,7 @@
     },
     options: {
       responsive: true,
+      layout: { padding: chartPadding },
       plugins: {
         legend: { display: false },
         title: {
