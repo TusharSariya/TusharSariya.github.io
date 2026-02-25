@@ -8,7 +8,7 @@ Late January early febuary big tech disclosed their 2026 capital expenditure. Wa
 
 ## 2026 CapEx :
 
-<canvas id="capex-chart" style="max-height: 400px;"></canvas>
+<canvas id="capex-chart" class="chart-border" style="max-height: 400px;"></canvas>
 
 - Oracle ~50B
 - Meta ~125B
@@ -19,7 +19,7 @@ Late January early febuary big tech disclosed their 2026 capital expenditure. Wa
 
 ok cool big number, but what does this mean in a historical context :
 
-<canvas id="historical-chart" style="max-height: 400px;"></canvas>
+<canvas id="historical-chart" class="chart-border" style="max-height: 400px;"></canvas>
 
 | Project / Entity | Total Cost (Adjusted) | Duration | Avg. Spend Per Year |
 |------------------|----------------------|----------|---------------------|
@@ -31,6 +31,18 @@ ok cool big number, but what does this mean in a historical context :
 that puts it into perspective doesnt it? the even wilder thing is these historical projects were government backed, this AI spend is almost completely private industry. the US entire Defence budget is approximately 900B.
 
 even more, Once you Build a Higway or Railroad you get to keep the infrastructure and just maintain it. in this AI arms race approximately 60% is going into depreciating GPUs.
+
+lets compare the GDP of countries.
+
+<canvas id="gdp-chart" class="chart-border" style="max-height: 400px;"></canvas>
+
+| Entity | GDP / CapEx ($B) |
+|--------|------------------|
+| Switzerland | $1,000 |
+| Belgium | $716.98 |
+| Big Tech AI (2026 CapEx) | $685 |
+| Sweden | $662.32 |
+| Israel | $610.75 |
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script src="{{ site.baseurl }}/assets/js/bigtech-chart.js"></script>

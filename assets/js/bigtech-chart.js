@@ -130,4 +130,40 @@
       }
     }
   });
+
+  new Chart(document.getElementById('gdp-chart'), {
+    type: 'bar',
+    data: {
+      labels: ['Switzerland', 'Belgium', 'Big Tech AI', 'Sweden', 'Israel'],
+      datasets: [{
+        label: 'GDP / CapEx ($B)',
+        data: [1000, 716.98, 685, 662.32, 610.75],
+        backgroundColor: ['#537D96', '#537D96', '#EC8F8D', '#537D96', '#537D96'],
+        borderRadius: 4
+      }]
+    },
+    options: {
+      responsive: true,
+      plugins: {
+        legend: { display: false },
+        title: {
+          display: true,
+          text: 'Big Tech 2026 CapEx vs Country GDP ($B)',
+          font: { family: fontFamily, size: 16 }
+        }
+      },
+      scales: {
+        y: {
+          beginAtZero: true,
+          grid: { color: 'rgba(0,0,0,0.08)' },
+          title: { display: true, text: 'Billions ($)', font: { family: fontFamily } },
+          ticks: { font: { family: fontFamily } }
+        },
+        x: {
+          grid: { display: false },
+          ticks: { font: { family: fontFamily } }
+        }
+      }
+    }
+  });
 })();
