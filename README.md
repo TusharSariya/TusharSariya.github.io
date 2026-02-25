@@ -2,18 +2,38 @@
 
 A personal website and blog built with Jekyll and hosted on GitHub Pages.
 
-## Setup
+## Running locally
+
+The site is built with Jekyll. To run it the same way as on GitHub Pages (so routes like `/bigtech` work), use Jekyll locally.
 
 ### Prerequisites
-- Ruby (>= 2.7)
-- Bundler (`gem install bundler`)
+- **Ruby** (>= 2.7) — [ruby-lang.org](https://www.ruby-lang.org/en/documentation/installation/)
+- **Bundler** — `gem install bundler`
 
-### Local Development
-```bash
-bundle install
-bundle exec jekyll serve
-```
-Then visit `http://localhost:4000`.
+### Steps
+1. Clone the repo (if you haven’t already) and go into the project folder:
+   ```bash
+   cd personal-website
+   ```
+2. Install dependencies:
+   ```bash
+   bundle install
+   ```
+3. Start the local server:
+   ```bash
+   bundle exec jekyll serve
+   ```
+4. Open **http://localhost:4000** in your browser.
+
+The server will watch for changes and regenerate the site; refresh the browser to see updates.
+
+### Stopping the server
+- **In the same terminal:** press **Ctrl+C**.
+- **If it’s in the background or another terminal:** run `pkill -f jekyll` to stop all Jekyll processes.
+
+**Note:** Opening `index.html` in the browser or using a simple static server (e.g. `python -m http.server`) will not run Jekyll, so permalink URLs like `/bigtech` will not work. Always use `bundle exec jekyll serve` and http://localhost:4000 for local development.
+
+## Setup
 
 ### Adding a Markdown Page
 1. Create a `.md` file in the project root
