@@ -10,12 +10,14 @@ Late January early febuary big tech disclosed their 2026 capital expenditure. Wa
 
 <canvas id="capex-chart" class="chart-border" style="max-height: 400px;"></canvas>
 
-- Oracle ~50B
-- Meta ~125B
-- Microsoft ~130B
-- Alphabet ~180B
-- Amazon ~200B
-- Total ~685B
+| Company | 2026 CapEx ($B) |
+|---------|------------------|
+| Oracle | ~50 |
+| Meta | ~125 |
+| Microsoft | ~130 |
+| Alphabet | ~180 |
+| Amazon | ~200 |
+| Total | ~685 |
 
 ok cool big number, but what does this mean in a historical context :
 

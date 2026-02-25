@@ -28,6 +28,26 @@ body {
   border-radius: 8px;
 }
 
+.container table {
+  border-collapse: collapse;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 8px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.container th,
+.container td {
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  padding: 0.5rem 0.75rem;
+  text-align: left;
+}
+
+.container th {
+  background: rgba(0, 0, 0, 0.04);
+  font-weight: 700;
+}
+
 .nav-bar {
   display: flex;
   justify-content: space-between;
