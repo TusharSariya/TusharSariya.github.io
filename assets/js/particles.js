@@ -57,10 +57,29 @@
     }
   }
 
+  function getContainerRects() {
+    var containers = document.querySelectorAll('.container');
+    var rects = [];
+    for (var i = 0; i < containers.length; i++) {
+      rects.push(containers[i].getBoundingClientRect());
+    }
+    return rects;
+  }
+
+  function isInsideContainers(x, y, rects) {
+    for (var i = 0; i < rects.length; i++) {
+      var r = rects[i];
+      if (x >= r.left && x <= r.right && y >= r.top && y <= r.bottom) return true;
+    }
+    return false;
+  }
+
   function run() {
     var w = canvas.width;
     var h = canvas.height;
     ctx.clearRect(0, 0, w, h);
+
+    var containerRects = getContainerRects();
 
     for (var i = 0; i < particles.length; i++) {
       var p = particles[i];
@@ -90,6 +109,8 @@
       if (p.y < -5) p.y = h + 2;
       if (p.x > w + 5) p.x = -2;
       if (p.x < -5) p.x = w + 2;
+
+      if (isInsideContainers(p.x, p.y, containerRects)) continue;
 
       ctx.beginPath();
       ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
